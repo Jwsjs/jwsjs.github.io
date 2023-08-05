@@ -6,7 +6,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Software Dev Job Board</title>
    <link rel="icon" href="program.png">
+   <script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Take advantage of your FREE job slot today, and have applicants matched to your roles by recruitment experts. At no cost at all!";
+      }
 
+      function myFunction2() {
+        document.getElementById("demo").innerHTML = "Simply send in your CV with your prefered tech stack and salary requirements and we will be in touch with relevant, new jobs we post!";
+      }
+</script>
 
 </head>
 <body>
@@ -38,9 +46,50 @@
       </div>
     </div>
   </nav>
+  
   <section class="bg-white" id="jobboard p-50">
 
+ 
+  <div class="bg-white justify-center items-center">
+    <div class="flex justify-end px-4 pt-4">
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2" aria-labelledby="dropdownButton">
+            <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex flex-col items-center pb-10">
+        <img class="w-16 h-16 mb-3 rounded-full shadow-lg" src="program.png" alt="Bonnie image"/>
+    <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Perfect Candidate Match Making </h5> <br>
+       <div id="demo"><span class="text-semibold text-gray-500 dark:text-gray-400">Get started today, for a better tomorrow</span>
+       </div> <div class="flex mt-4 space-x-3 md:mt-6">
+          <button type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700" onclick="myFunction()">Companies</button>
+          <button type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700" onclick="myFunction2()">Candidates</button>
+        </div>
+    </div>
+  </div>
 
+  <form class="px-12">   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search .Net, React..." required>
+        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+    </div>
+</form>
   <ul role="list" class="divide-y divide-gray-100 m-11 bg-white">
     <li class="flex justify-between gap-x-6 py-5">
   
@@ -112,6 +161,7 @@
     
   </ul>
 </section>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
