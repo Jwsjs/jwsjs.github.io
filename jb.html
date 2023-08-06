@@ -120,108 +120,133 @@
     </div>
 </form>
 <br>
-<!-- Add this code to the existing HTML structure -->
 
-<form id="searchForm" class="px-12">
-  <!-- ... (other form elements) ... -->
-
+<div class="flex justify-center items-center space-x-4 mt-4">
   <!-- Style the technology filter dropdown -->
-  <label for="corpFilter" class="block text-sm font-medium text-gray-900 dark:text-white">
-    Job Type:
-  </label>
   <div class="relative">
-    <select id="corpFilter" class="block w-full p-2 text-sm text-gray-900 border rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-      <option value="">Job type</option>
-      <option value="Contract">Contract</option>
-      <option value="Permanent">Permanent</option>
-
-    </select>
+    <label for="corpFilter" class="block text-sm font-medium text-gray-400 dark:text-white text-center">
+    <p class="text-semibold text-black dark:text-gray-400"> Job Type </p> 
+    </label>
+    <div class="relative">
+      <select id="corpFilter" class="block p-2 text-sm text-gray-400 border rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option value="">All Job types</option>
+        <option value="Contract">Contract</option>
+        <option value="Permanent">Permanent</option>
+      </select>
+    </div>
   </div>
 
   <!-- Style the job type filter dropdown -->
-  <label for="jobTypeFilter" class="block mt-4 text-sm font-medium text-gray-900 dark:text-white">
-  Work Type:
-    </label>
   <div class="relative">
-    <select id="jobTypeFilter" class="block w-full p-2 text-sm text-gray-900 border rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-      <option value="">All Job Types</option>
-      <option value="Remote">Remote</option>
-      <option value="Hybrid">Hybrid</option>
-      <option value="On-site">On-site</option>
-    </select>
-  </div>
-
-  <!-- ... (search input and button) ... -->
-</form>
-
-
-  <ul id="myUL" role="list" class="divide-y divide-gray-100 m-11 bg-white">
-    <li class="flex justify-between gap-x-6 py-5" data-corptype="Contract" data-jobtype="remote">
-  
-      <div class="flex gap-x-4">
-        <a href="reactjob.html">
-        <img src="React-icon.png" class="h-12 w-12 flex-none rounded-full bg-gray-50" alt="reactjs">
-      
-        <div class="min-w-0 flex-auto">
-          
-          <p class="text-sm font-semibold leading-6 text-gray-900">React Developer</p>
-          <p class="mt-1 truncate text-xs leading-5 text-gray-500">£450-£500 per day <br> React.js, Next.js Micro-frontends <br> Remote </p>
-        </a>
+    <label for="jobTypeFilter" class="block text-sm font-medium text-gray-400 dark:text-white text-center">
+   <p class="text-semibold text-black dark:text-gray-400">  Hybrid Split </p> 
+    </label>
+    <div class="relative">
+      <select id="jobTypeFilter" class="block p-2 text-sm text-gray-400 border rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option value="">All Hybrid splits</option>
+        <option value="Remote">Remote</option>
+        <option value="Hybrid">Hybrid</option>
+        <option value="On-site">On-site</option>
+      </select>
     </div>
-  </div>
-
-   
-    </li>
-    <li class="flex justify-between gap-x-6 py-5" data-corptype="Contract" data-jobtype="hybrid">
-  
-      <div class="flex gap-x-4">
-        <a href="angularjob.html">
-        <img src="angular-icon.png" class="h-12 w-12 flex-none rounded-full bg-gray-50" alt="reactjs">
-      
-        <div class="min-w-0 flex-auto">
-          
-          <p class="text-sm font-semibold leading-6 text-gray-900">Angular Developer</p>
-          <p class="mt-1 truncate text-xs leading-5 text-gray-500">£450-£550 per day <br> Angular, TypeScript & RxJS: <br> Hybrid-remote, London </p>
-        </a>
-    </div>
-  </div>
-
-    
-    </li>
-
-    <li class="flex justify-between gap-x-6 py-5" data-corptype="Contract" data-jobtype="remote">
-  
-      <div class="flex gap-x-4">
-        <a href="netjob.html">
-        <img src="net.png" class="h-12 w-12 flex-none rounded-full bg-gray-50" alt="reactjs">
-     
-        <div class="min-w-0 flex-auto">
-          
-          <p class="text-sm font-semibold leading-6 text-gray-900">.Net Developer</p>
-          <p class="mt-1 truncate text-xs leading-5 text-gray-500">£550-£650 per day <br> .NET Core, ASP.NET, C#, SQL <br> Remote</p>
-        </a>
-    </div>
-  </div>
-    </li>
-    
- 
-
-  <li class="flex justify-between gap-x-6 py-5" data-corptype="Permanent" data-jobtype="On-site">
-  
-    <div class="flex gap-x-4">
-      <a href="juniorc.html">
-      <img src="csharp.png" class="h-12 w-12 flex-none rounded-full bg-gray-50" alt="reactjs">
-   
-      <div class="min-w-0 flex-auto">
-        
-        <p class="text-sm font-semibold leading-6 text-gray-900">Junior C# Developer</p>
-        <p class="mt-1 truncate text-xs leading-5 text-gray-500">£40,0000 p/a <br> ASP.NET, C#, SQL <br> Reading, on-site</p>
-      </a>
   </div>
 </div>
-  </li>
 
-</ul>
+
+
+<div class="flex pl-10">
+  <ul id="myUL" role="list" class="w-1/2 pr-4 divide-y divide-gray-100 bg-white">
+   
+     <!-- React Job -->
+    <li class="flex justify-between gap-x-6 py-5 items-center" data-corptype="Contract" data-jobtype="remote">
+      <div class="flex flex-col gap-y-2 items-center">
+        <a href="reactjob.html" class="flex items-center">
+          <img src="React-icon.png" class="h-12 w-12 flex-none rounded-full bg-gray-50 mb-2 mr-3" alt="reactjs">
+          <div class="min-w-0 flex-auto mt-1">
+            <p class="text-sm font-semibold leading-6 text-gray-900">React Developer</p>
+            <p class="mt-1 truncate text-xs leading-5 text-gray-500">£450-£500 per day <br> Remote </p>
+          </div>
+        </a>
+        <div class="flex justify-center space-x-2">
+        <button id="btnReact" class="invisible lg:visible bg-gray-200 hover:bg-gray-300 text-gray-600 font-normal py-1 px-2 w-16 rounded">
+          Details
+        </button>
+      </div>
+      </div>
+    </li>
+
+
+
+        <!-- Angular Job -->
+        <li class="flex justify-between gap-x-6 py-5" data-corptype="Contract" data-jobtype="hybrid">
+          <div class="flex flex-col gap-y-2 items-center">
+            <a href="angularjob.html" class="flex items-center">
+              <img src="angular-icon.png" class="h-12 w-12 flex-none rounded-full bg-gray-50 mb-2 mr-3" alt="angular">
+              <div class="min-w-0 flex-auto mt-1">
+                <p class="text-sm font-semibold leading-6 text-gray-900">Angular Developer</p>
+                <p class="mt-1 truncate text-xs leading-5 text-gray-500">£450-£550 per day <br> Hybrid-remote, London </p>
+              </div>
+            </a>
+            <div class="flex justify-center space-x-2">
+            <button id="btnAngular" class="invisible lg:visible bg-gray-200 hover:bg-gray-300 text-gray-600 font-normal py-1 px-2 w-16 rounded">
+              Details
+            </button>
+          </div>
+          </div>
+        </li>
+        
+        <!-- .NET Job -->
+        <li class="flex justify-between gap-x-6 py-5" data-corptype="Contract" data-jobtype="remote">
+          <div class="flex flex-col gap-y-2 items-center">
+            <a href="netjob.html" class="flex items-center">
+              <img src="net.png" class="h-12 w-12 flex-none rounded-full bg-gray-50 mb-2 mr-3" alt=".NET">
+              <div class="min-w-0 flex-auto mt-1">
+                <p class="text-sm font-semibold leading-6 text-gray-900">.Net Developer</p>
+                <p class="mt-1 truncate text-xs leading-5 text-gray-500">£550-£650 per day <br> Remote</p>
+              </div>
+            </a>
+            <div class="flex justify-center space-x-2">
+            <button id="btndotnet" class="invisible lg:visible bg-gray-200 hover:bg-gray-300 text-gray-600 font-normal py-1 px-2 w-16 rounded">
+              Details
+            </button>
+          </div>
+          </div>
+        </li>
+        
+        <!-- C# Job -->
+        <li class="flex justify-between gap-x-6 py-5" data-corptype="Permanent" data-jobtype="On-site">
+          <div class="flex flex-col gap-y-2 items-center">
+            <a href="juniorc.html" class="flex items-center">
+              <img src="csharp.png" class="h-12 w-12 flex-none rounded-full bg-gray-50 mb-2 mr-3" alt="csharp">
+              <div class="min-w-0 flex-auto mt-1">
+                <p class="text-sm font-semibold leading-6 text-gray-900">Junior C# Developer</p>
+                <p class="mt-1 truncate text-xs leading-5 text-gray-500">£40,0000 p/a  <br> Reading, on-site</p>
+              </div>
+            </a>
+            <div class="flex justify-center space-x-2">
+            <button id="btncsharp" class="invisible lg:visible bg-gray-200 hover:bg-gray-300 text-gray-600 font-normal py-1 px-2 w-16 rounded">
+              Details
+            </button>
+          </div>
+          </div>
+        </li>
+      </ul>
+      <div class="w-1/2 pl-4">
+        <div id="jobDetailsContainer" class="hidden lg:flex w-full flex items-center justify-center mt-10 h-full">
+         
+            <div class="w-1/2 pr-4">
+              <!-- Content for Job 1 -->
+              
+              <!-- Add more content for other jobs if needed -->
+            </div>
+          
+         
+          
+        </div>
+      </div>
+    </div>
+    
+
 
 </section>
 
@@ -269,7 +294,156 @@
 
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // ... your existing code
 
+    // Add event listeners for each button
+    const btnReact = document.getElementById("btnReact");
+    btnReact.addEventListener("click", function () {
+      updateJobDetails("React Developer", "Job details for React Developer");
+    });
+
+    // Repeat the above for other buttons and jobs
+
+    // Function to update job details container
+    function updateJobDetails(jobTitle, jobDetails) {
+      const jobDetailsContainer = document.getElementById("jobDetailsContainer");
+      jobDetailsContainer.innerHTML = `
+      <div class="w-full h-full p-8 bg-gray-100">
+      <div class="flex justify-center items-center pt-10">  
+        <img src="React-icon.png" class="h-12 w-12 rounded-full bg-gray-50" alt="React">  </div>
+<h1 class="text-center font-extrabold pt-2 text-xl">
+React Developer
+</h1>
+<h2 class="font-semibold text-lg text-center">
+Remote <br> £500 per day <br> React.js, Next.js & Micro-frontends:
+
+</h2>
+
+<p class="text-lg pt-10 p-4" >    
+  We are seeking a skilled and experienced React Developer with expertise in Next.js and micro front-end architecture to join our dynamic development team. As a React Developer, you will be responsible for designing, developing, and maintaining cutting-edge web applications that deliver exceptional user experiences. Your expertise in Next.js and micro front-end architecture will be crucial in building scalable and performant applications.
+</p>
+<div class="text-center mt-4">
+<button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded mt-4 mx-auto" onclick="redirectToApplicationPage()">Apply Now</button>
+</div>
+
+      `;
+    }
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // ... your existing code
+
+    // Add event listeners for each button
+    const btnAngular = document.getElementById("btnAngular");
+    btnAngular.addEventListener("click", function () {
+      updateJobDetails("Angular Developer", "Job details for Angular Developer");
+    });
+
+    // Repeat the above for other buttons and jobs
+
+    // Function to update job details container
+    function updateJobDetails(jobTitle, jobDetails) {
+      const jobDetailsContainer = document.getElementById("jobDetailsContainer");
+      jobDetailsContainer.innerHTML = `
+      <div class="w-full h-full p-8 bg-gray-100">
+      <div class="flex justify-center items-center pt-10">  <img src="angular-icon.png" class="h-12 w-12 rounded-full bg-gray-50" alt="angular">  </div>
+    <h1 class="text-center font-extrabold pt-2 text-xl">
+    Angular Developer
+    </h1>
+    <h2 class="font-semibold text-lg text-center">
+    Hybrid-remote, London <br> £450-£550 per day <br> Angular, TypeScript & RxJS:
+    </h2>
+    
+    <p class="text-lg pt-10 p-4">
+      We are seeking a skilled and experienced Angular Developer with expertise in TypeScript and RxJS to join our dynamic development team. As an Angular Developer, you will be responsible for designing, developing, and maintaining cutting-edge web applications that deliver exceptional user experiences. Your expertise in Angular, TypeScript, and RxJS will be crucial in building scalable and performant applications.
+    </p>
+      `;
+    }
+  });
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // ... your existing code
+
+    // Add event listeners for each button
+    const btndotnet = document.getElementById("btndotnet");
+    btndotnet.addEventListener("click", function () {
+      updateJobDetails(".Net Developer", "Job details for .Net Developer");
+    });
+
+    // Repeat the above for other buttons and jobs
+
+    // Function to update job details container
+    function updateJobDetails(jobTitle, jobDetails) {
+      const jobDetailsContainer = document.getElementById("jobDetailsContainer");
+      jobDetailsContainer.innerHTML = `
+      <div class="w-full h-full p-8 bg-gray-100">
+        <div class="flex justify-center items-center pt-10">
+          <img src="net.png" class="h-12 w-12 rounded-full bg-gray-50" alt=".NET">
+        </div>
+        <h1 class="text-center font-extrabold pt-2 text-xl">
+          Full Stack .NET Developer
+        </h1>
+        <h2 class="font-semibold text-lg text-center">
+          Remote <br> £550-£650 per day <br> .NET Core, ASP.NET, C#, SQL Server, React:
+        </h2>
+        <p class="text-lg pt-10 p-4">
+          We are seeking a skilled and experienced Full Stack .NET Developer with expertise in ASP.NET, C#, SQL Server, and front-end frameworks such as Angular or React to join our dynamic development team. As a Full Stack .NET Developer, you will be responsible for designing, developing, and maintaining robust and scalable web applications that deliver exceptional user experiences. Your expertise in both back-end and front-end technologies will be crucial in building end-to-end solutions.
+        </p>
+      </div>
+
+      `;
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // ... your existing code
+
+    // Add event listeners for each button
+    const btncsharp = document.getElementById("btncsharp");
+    btncsharp.addEventListener("click", function () {
+      updateJobDetails("Junior C# Developer", "Job details for Junior C# Developer");
+    });
+
+    // Repeat the above for other buttons and jobs
+
+    // Function to update job details container
+    function updateJobDetails(jobTitle, jobDetails) {
+      const jobDetailsContainer = document.getElementById("jobDetailsContainer");
+      jobDetailsContainer.innerHTML = `
+      <div class="w-full h-full p-8 bg-gray-100">
+        <div class="flex justify-center items-center pt-10">
+      <img src="csharp.png" class="h-12 w-12 rounded-full bg-gray-50" alt=".net">
+    </div>
+    <h1 class="text-center font-extrabold pt-2 text-xl">
+      Junior C# Developer
+    </h1>
+    <h2 class="font-semibold text-lg text-center">
+      Reading, on-site <br> £40,000 per year <br> .NET Core, C#, SQL Server, React:
+    </h2>
+
+    <p class="text-lg pt-10 p-4">
+      We are seeking a skilled and motivated Junior C# Developer with expertise in .NET Core, C#, and SQL Server to join our dynamic development team. As a Junior C# Developer, you will be responsible for contributing to the design, development, and maintenance of robust and scalable web applications. This is an excellent opportunity for someone looking to grow their career in software development and gain experience in a collaborative environment.
+    </p>
+      `;
+    }
+  });
+
+</script>
+
+<script>
+  function redirectToApplicationPage() {
+    // Redirect the user to the "reactjob.html" page
+    window.location.href = 'reactjob.html';
+  }
+</script>
 
 </body>
 </html>
