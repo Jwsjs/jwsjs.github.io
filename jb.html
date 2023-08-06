@@ -9,12 +9,43 @@
    <script>
     function myFunction() {
         document.getElementById("demo").innerHTML = "Take advantage of your FREE job slot today, and have applicants matched to your roles by recruitment experts. At no cost at all!";
+        document.getElementById("demo").classList.add("font-semibold");
+        document.getElementById("demo").classList.add("text-gray-500");
+        document.getElementById("demo").classList.add("px-10");
+        document.getElementById("demo").classList.add("text-center");
+
+        
+
       }
 
       function myFunction2() {
         document.getElementById("demo").innerHTML = "Simply send in your CV with your prefered tech stack and salary requirements and we will be in touch with relevant, new jobs we post!";
+        document.getElementById("demo").classList.add("font-semibold");
+        document.getElementById("demo").classList.add("text-gray-500");
+        document.getElementById("demo").classList.add("px-10");
+        document.getElementById("demo").classList.add("text-center");
       }
+
+
 </script>
+
+<style>
+/* Add a class to initially hide all list items and details buttons */
+#myUL li, #myUL li button {
+  display: none;
+}
+
+/* Display list items and details buttons that match the search */
+#myUL li[style="display: block;"] {
+  display: block;
+}
+#myUL li[style="display: block;"] button {
+  display: block;
+}
+
+
+
+</style>
 
 </head>
 <body>
@@ -78,7 +109,7 @@
     </div>
   </div>
 
-  <form class="px-12">   
+  <form id="searchForm" class="px-12">   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
     <div class="relative">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -86,85 +117,98 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
             </svg>
         </div>
-        <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search .Net, React..." required>
-        <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+        <input type="text" id="searchInput" placeholder="Search .Net, React..." class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+        <button id="searchButton" type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
     </div>
 </form>
-  <ul role="list" class="divide-y divide-gray-100 m-11 bg-white">
+
+
+
+  <ul id="myUL" role="list" class="divide-y divide-gray-100 m-11 bg-white">
     <li class="flex justify-between gap-x-6 py-5">
   
       <div class="flex gap-x-4">
+        <a href="reactjob.html">
         <img src="React-icon.png" class="h-12 w-12 flex-none rounded-full bg-gray-50" alt="reactjs">
       
         <div class="min-w-0 flex-auto">
           
           <p class="text-sm font-semibold leading-6 text-gray-900">React Developer</p>
           <p class="mt-1 truncate text-xs leading-5 text-gray-500">£450-£500 per day <br> React.js, Next.js Micro-frontends <br> Remote </p>
+        </a>
     </div>
   </div>
 
-      <div class="sm:flex sm:flex-col sm:items-end">
-     
-        <br>
-        <a href="reactjob.html">
-        <button href="reactjob.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.5 px-2 rounded">
-          Details
-        </button>
-      </a>   
-      </div>
+   
     </li>
     <li class="flex justify-between gap-x-6 py-5">
   
       <div class="flex gap-x-4">
+        <a href="angularjob.html">
         <img src="angular-icon.png" class="h-12 w-12 flex-none rounded-full bg-gray-50" alt="reactjs">
       
         <div class="min-w-0 flex-auto">
           
           <p class="text-sm font-semibold leading-6 text-gray-900">Angular Developer</p>
           <p class="mt-1 truncate text-xs leading-5 text-gray-500">£450-£550 per day <br> Angular, TypeScript & RxJS: <br> Hybrid-remote, London </p>
+        </a>
     </div>
   </div>
 
-      <div class="sm:flex sm:flex-col sm:items-end">
-     
-        <br>
-        <a href="angularjob.html">
-        <button href="angularjob.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.5 px-2 rounded">
-          Details
-        </button>
-      </a>   
-      </div>
+    
     </li>
 
     <li class="flex justify-between gap-x-6 py-5">
   
       <div class="flex gap-x-4">
+        <a href="netjob.html">
         <img src="net.png" class="h-12 w-12 flex-none rounded-full bg-gray-50" alt="reactjs">
-      
+     
         <div class="min-w-0 flex-auto">
           
           <p class="text-sm font-semibold leading-6 text-gray-900">.Net Developer</p>
           <p class="mt-1 truncate text-xs leading-5 text-gray-500">£550-£650 per day <br> .NET Core, ASP.NET, C#, SQL <br> Remote</p>
+        </a>
     </div>
   </div>
-
-      <div class="sm:flex sm:flex-col sm:items-end">
-     
-        <br>
-        <a href="netjob.html">
-        <button href="netjob.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.5 px-2 rounded">
-          Details
-        </button>
-      </a>   
-      </div>
     </li>
     
   </ul>
+
 </section>
 
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById("searchInput");
+  const searchForm = document.getElementById("searchForm"); // Add this line
+  const listItems = document.querySelectorAll("#myUL li");
+
+  function performSearch(event) {
+    event.preventDefault(); // Prevent form submission
+    const searchTerm = searchInput.value.toLowerCase();
+
+    listItems.forEach(item => {
+      const text = item.textContent.toLowerCase();
+
+      if (text.includes(searchTerm)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
+  searchInput.addEventListener("input", performSearch);
+  searchForm.addEventListener("submit", performSearch); // Add this line
+});
+
+
+
+</script>
 </body>
 </html>
